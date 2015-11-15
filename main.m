@@ -37,9 +37,10 @@ scatter(original_x,y)
 
 % Comparison between the 3 methods
 plot(original_x,x'*w_linear,original_x,x'*w_logistic_regression,original_x,x'*w_logistic_regression_v2);
-title('Analytical solution')
+title('Comparision of three methods')
 xlabel('x')
 ylabel('y')
+legend('Analytical solution','First gradient descent', 'Second gradient descent')
 hold on
 scatter(original_x,y)
 
