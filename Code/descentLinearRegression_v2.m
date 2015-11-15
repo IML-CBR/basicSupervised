@@ -6,10 +6,7 @@ function [w, js] = descentLinearRegression_v2(x,y,...
     j_previous = -1;
     
     js = j;
-        
-    if max_num_iterations == 10000 && tolerance == 10^-5
-        a = 1
-    end
+    
     error_threshold = 1;
     num_iterations = 1;
     while j > error_threshold && num_iterations < max_num_iterations && ...
